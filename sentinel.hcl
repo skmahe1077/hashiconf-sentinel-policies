@@ -1,3 +1,4 @@
+# This Sentinel policy set is based on the CIS AWS Foundations Benchmark v1.4.0
 policy "ec2-ebs-encryption-enabled" {
   source = "https://registry.terraform.io/v2/policies/hashicorp/CIS-Policy-Set-for-AWS-Terraform/1.0.1/policy/ec2-ebs-encryption-enabled.sentinel?checksum=sha256:ad0d6f7f068396d0cadd55dbb665b0379d232f4122ab62e674f263b2eb762dba"
   enforcement_level = "hard-mandatory"
