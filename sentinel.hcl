@@ -14,6 +14,11 @@ policy "ec2-security-group-ingress-traffic-restriction-port-22" {
   enforcement_level = "soft-mandatory"
 }
 
+policy "s3-block-public-access-bucket-level" {
+  source = "https://registry.terraform.io/v2/policies/hashicorp/CIS-Policy-Set-for-AWS-Terraform/1.0.1/policy/s3-block-public-access-bucket-level.sentinel?checksum=sha256:38cb17fd70b9e87bbc3283cc720458965dca75fc6074c159d301d6f901443ae1"
+  enforcement_level = "advisory"
+}
+
 module "report" {
   source = "https://registry.terraform.io/v2/policies/hashicorp/CIS-Policy-Set-for-AWS-Terraform/1.0.1/policy-module/report.sentinel?checksum=sha256:1f414f31c2d6f7e4c3f61b2bc7c25079ea9d5dd985d865c01ce9470152fa696d"
 }
