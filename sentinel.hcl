@@ -19,6 +19,11 @@ policy "s3-block-public-access-bucket-level" {
   enforcement_level = "advisory"
 }
 
+policy "s3-require-mfa-delete" {
+  source = "https://registry.terraform.io/v2/policies/hashicorp/CIS-Policy-Set-for-AWS-Terraform/1.0.1/policy/s3-require-mfa-delete.sentinel?checksum=sha256:cc113647a3e172423325a57b65d00a3b9e85cbe587b0fe650f862307690e2126"
+  enforcement_level = "advisory"
+}
+
 module "report" {
   source = "https://registry.terraform.io/v2/policies/hashicorp/CIS-Policy-Set-for-AWS-Terraform/1.0.1/policy-module/report.sentinel?checksum=sha256:1f414f31c2d6f7e4c3f61b2bc7c25079ea9d5dd985d865c01ce9470152fa696d"
 }
