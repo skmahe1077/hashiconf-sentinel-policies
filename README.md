@@ -24,6 +24,6 @@ hashiconf-sentinel-policies/
 1. In HCP Terraform, go to **Organization → Policy Sets → Create policy set**.
 2. Select this repo and the branch that contains `sentinel.hcl`.
 3. Scope the policy set to your demo Terraform workspace.
-4. Run a Terraform plan in that workspace — you will see policy checks applying.
+4. Run a Terraform plan in that workspace and you will see policy checks applying.
 
 ---
